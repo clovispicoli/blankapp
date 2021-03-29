@@ -12,7 +12,7 @@
     
 		<h:form id="formListaVeiculos">        
 		   			   		
-		  <p:commandButton icon="ui-icon-circle-plus" styleClass="imgButton" 
+		  <p:commandButton icon="pi pi-plus-circle" styleClass="imgButton" 
 		   		action="#{crudCaseBean.novoVeiculo}" title="Incluir"/>   	
 		  <br/><br/>
 		   	    	   	   			
@@ -27,11 +27,11 @@
 				<p:column headerText="Ano">#{veiculo.ano}</p:column>
 					
 				<p:column headerText="Ações">								
-					<p:commandButton icon="ui-icon-trash" styleClass="imgButton"
+					<p:commandButton icon="pi pi-trash" styleClass="imgButton"
 						title="Excluir" action="#{crudCaseBean.confirmarExclusao(veiculo)}">					
 					</p:commandButton>
 														
-					<p:commandButton title="Alterar" icon="ui-icon-pencil" styleClass="imgButton"  
+					<p:commandButton title="Alterar" icon="pi pi-pencil" styleClass="imgButton"  
 						action="#{crudCaseBean.editarVeiculo(veiculo)}">					
 					</p:commandButton>
 				</p:column>
