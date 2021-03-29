@@ -53,6 +53,12 @@
 	</context-param>
 	<!--Fim de Configuracoes do JSF/Facelets -->
 	
+	<!-- Themes -->
+	<context-param>
+		<param-name>primefaces.THEME</param-name>
+		<param-value>#{configBean.skinTheme}</param-value>
+	</context-param>
+	
 	<!--Configuracoes para o OmniFaces -->
 	<filter>
 		<filter-name>noCacheFilter</filter-name>
