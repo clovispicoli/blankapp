@@ -52,6 +52,17 @@
 		<param-value>server</param-value>
 	</context-param>
 	<!--Fim de Configuracoes do JSF/Facelets -->
+	
+	<!--Configuracoes para o OmniFaces -->
+	<filter>
+		<filter-name>noCacheFilter</filter-name>
+		<filter-class>org.omnifaces.filter.CacheControlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>noCacheFilter</filter-name>
+		<servlet-name>Faces Servlet</servlet-name>
+ 	</filter-mapping>
+ 	<!--Fim de Configuracoes para o OmniFaces --> 
 
 	<!-- Configuracoes do FacesServlet -->
 	<servlet>
@@ -65,5 +76,37 @@
 		<url-pattern>*.faces</url-pattern>
 	</servlet-mapping>
 	<!-- Fim de configuracoes do FacesServlet -->
+	
+	<!-- Paginas de erro --> 	 	 
+	<error-page>
+		<error-code>404</error-code>
+	    <location>/pages/errorpages/error404.faces</location>
+	</error-page>
+	  	  	  	
+	<error-page>
+	    <error-code>500</error-code>
+	    <location>/pages/errorpages/error500.faces</location>
+	</error-page>
+	
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/pages/errorpages/errorServlet.faces</location>
+	 </error-page>
+	
+	<error-page>
+		<exception-type>javax.faces.application.ViewExpiredException</exception-type>
+		<location>/pages/errorpages/viewExpired.faces</location>
+	</error-page>
+	  	
+	<error-page>
+	    <error-code>502</error-code>
+	    <location>/pages/errorpages/error502.faces</location>
+	</error-page>
+	  	
+	<error-page>
+	    <error-code>503</error-code>
+	    <location>/pages/errorpages/error503.faces</location>
+	</error-page> 		
+	<!-- Fim de Paginas de erro -->
 
 </web-app>

@@ -52,6 +52,17 @@
 		<param-value>server</param-value>
 	</context-param>
 	<!--Fim de Configuracoes do JSF/Facelets -->
+	
+	<!--Configuracoes para o OmniFaces -->
+	<filter>
+		<filter-name>noCacheFilter</filter-name>
+		<filter-class>org.omnifaces.filter.CacheControlFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>noCacheFilter</filter-name>
+		<servlet-name>Faces Servlet</servlet-name>
+ 	</filter-mapping>
+ 	<!--Fim de Configuracoes para o OmniFaces --> 
 
 	<!-- Configuracoes do FacesServlet -->
 	<servlet>
