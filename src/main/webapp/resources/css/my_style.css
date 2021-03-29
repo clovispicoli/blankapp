@@ -82,7 +82,17 @@ header {flex-shrink: 0;}
 /* Layouts do primeFaces*/
 .ui-dialog-title, .ui-panel .ui-panel-titlebar .ui-panel-title{
 	text-shadow: 1px 0px 0px red,-1px 0px 0px red,0px 1px 0px red,0px -1px 0px red;
- 	font-size: 150%;
+ 	font-size: 130%;
+	font-weight: bold;
+	color: white;
+	font-family: verdana, arial, sans-serif;
+	float: left !important
+}
+
+/* Titulos*/
+.page-title, .ui-panel .ui-panel-titlebar .ui-panel-title{
+	text-shadow: 1px 0px 0px red,-1px 0px 0px red,0px 1px 0px red,0px -1px 0px red;
+ 	font-size: 160%;
 	font-weight: bold;
 	color: white;
 	font-family: verdana, arial, sans-serif;
